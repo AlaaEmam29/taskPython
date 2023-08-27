@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voting Results</title>
+</head>
+<body>
+    <h1>Voting Results</h1>
+    <ul>
+        {% for singer in result %}
+        <li>{{ singer.name }} - {{ singer.votes }} votes</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

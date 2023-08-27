@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vote</title>
+</head>
+<body>
+    <h1>Vote for {{ singer.name }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        <input type="submit" value="Vote">
+    </form>
+</body>
+</html>

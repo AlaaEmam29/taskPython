@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Vote for a Singer</h1>
+    <form method="post" action="{% url 'vote'  %}">
+        {% csrf_token %}
+        <label>
+            <input type="radio" name="singer" value="1">
+            Taylor Swift
+        </label><br>
+        <label>
+            <input type="radio" name="singer" value="2">
+            Halsey
+        </label><br>       
+        
+        <button type="submit">Vote</button>
+    </form>
+    </body>
+</html>

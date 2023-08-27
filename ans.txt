@@ -1,0 +1,9 @@
+Database Schema Rationale:
+
+For development, we've opted for SQLite due to its lightweight nature and ease of setup. SQLite simplifies local development, making it perfect for testing and debugging code before deployment.
+
+In production, we'll transition to PostgreSQL, a robust and scalable relational database. PostgreSQL's advanced features will ensure data consistency, reliability, and efficient handling of millions of votes, meeting the demands of our live voting application.
+
+
+
+
